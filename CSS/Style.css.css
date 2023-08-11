@@ -1,0 +1,61 @@
+
+.mySkills {
+    padding: 20px;
+  }
+  
+  .flexContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flexContainer > div {
+    width: 33%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .flexContainer img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  
+.myWork {
+    padding: 20px;
+  }
+  
+  .workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .workGrid > div {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .workGrid img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+  
+    .flexContainer > div {
+      width: 100%;
+    }
+  
+    .workGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    
+  }
+  
